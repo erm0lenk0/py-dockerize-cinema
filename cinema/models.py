@@ -63,7 +63,7 @@ class Movie(models.Model):
     image = models.ImageField(null=True, upload_to=movie_image_file_path)
 
     class Meta:
-        ordering = ["title"]
+        ordering = ["title", "image"]
 
     def __str__(self):
         return self.title
